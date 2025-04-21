@@ -117,14 +117,39 @@ ul.hide-navbar {
     padding: 1vh;
     border-radius: 1vh;
 }
+.slide-caption a {
+    background-color: rgba(0, 0, 0, 0.75); 
+	backdrop-filter: blur(10px);          
+	-webkit-backdrop-filter: blur(10px);   
+    color: #fff;
+    border: none;
+    padding: 1vh 2vh;
+    font-size: 1.5rem;
+    border-radius: 6vh;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1.3rem;
+    padding: 2.2vh 7vh;
+    text-decoration: none;
+    font-weight: 500;
+    border: 0.2vh solid #ffffff;
+    transition: 0.3s ease-in-out;
+}
+.slide-caption a:hover {
+    border: 0.2vh solid #d4a962;
+    color: #d4a962;
+    animation: warpPulse 1.2s infinite ease-in-out;
+}
 .carousel-thumbnails {
     display: flex;
     justify-content: center;
     gap: 1vh;
-    margin-top: 2vh;
-    padding-bottom: 2vh;
+    margin-top: 0vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
     position: relative;
     z-index: 2;
+    background-image: url("img/space.png")
 }
 .thumbnail {
     width: 14vh;
@@ -136,8 +161,7 @@ ul.hide-navbar {
     opacity: 0.6;
     transition: 0.3s ease;
 }
-.thumbnail:hover,
-.thumbnail.active {
+.thumbnail:hover, .thumbnail.active {
     border-color: #5e82d0;
     opacity: 1;
     transform: scale(1.05);

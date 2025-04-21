@@ -2,6 +2,7 @@ const track = document.querySelector(".carousel-track");
 const slides = Array.from(document.querySelectorAll(".carousel-slide"));
 const thumbnails = Array.from(document.querySelectorAll(".thumbnail"));
 let currentIndex = 0;
+let autoScrollTimer;
 
 function updateSlidePosition() {
   track.style.transform = `translateX(-${currentIndex * 100}%)`;
@@ -18,18 +19,29 @@ function updateSlidePosition() {
 function showSlide(index) {
   currentIndex = index;
   updateSlidePosition();
+  resetAutoScrollTimer();
+}
+
+function resetAutoScrollTimer() {
+  clearInterval(autoScrollTimer); 
+  startAutoScroll(); 
+}
+
+function startAutoScroll() {
+  autoScrollTimer = setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlidePosition();
+  }, 30000); 
 }
 
 thumbnails.forEach((thumb, i) => {
   thumb.addEventListener("click", () => {
-    showSlide(i);
+    showSlide(i); 
   });
 });
 
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateSlidePosition();
-}, 10000);
+startAutoScroll();
+updateSlidePosition();
 
 let lastScrollTop = 0;
     const navbar = document.querySelector("ul");
