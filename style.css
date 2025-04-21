@@ -99,6 +99,7 @@ ul.hide-navbar {
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
     top: 0;
 }
 .carousel-slide {
@@ -106,6 +107,8 @@ ul.hide-navbar {
     height: auto;
     object-fit: cover;
     position: relative;
+    flex: 0 0 100%;
+   transition: opacity 1s ease-in-out;
 }
 .slide-caption {
     position: absolute;

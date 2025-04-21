@@ -31,7 +31,7 @@ function startAutoScroll() {
   autoScrollTimer = setInterval(() => {
     currentIndex = (currentIndex + 1) % slides.length;
     updateSlidePosition();
-  }, 30000); 
+  }, 10000); 
 }
 
 thumbnails.forEach((thumb, i) => {
