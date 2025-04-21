@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honkai Star Rail Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Navbar-->
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="" class="home" style="--region-color: #8c6b34;">Home</a></li>
+            <li><a href="" class="herta" style="--region-color: #5e82d0;">Herta's Spacestation</a></li>
+            <li><a href="" class="xianzhou" style="--region-color: #00f0aa;">Xianzhou Luofu</a></li>
+            <li><a href="" class="penacony" style="--region-color: #d4a962;">Penacony</a></li>
+            <li><a href="" class="amphoreus" style="--region-color: #a3a3a3;">Amphoreus</a></li>
+            <li style="float: right; margin-right: 2vh;"><a target="_blank" rel="noopener noreferrer" href="https://www.hoyoverse.com/en-us/" class="official" style="--region-color: #276bca;">Support HoyoVerse</a></li>
+        </ul>
+    </nav>
+
+    <!--Carousel Slide-->
+
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <img src="img/hsr-1.png" alt="Slide 1" class="carousel-slide" style="opacity: 0.7; width: 100%; height: 100%;">
+                <div class="slide-caption" style="bottom: 30%; font-weight: 700; left: 3%; font-size: 5rem;">Honkai: Star Rail 2nd Anniversary</div>
+                <div class="slide-caption" style="bottom: 25%; font-weight: 400; left: 3%; font-size: 1.3rem;">Honkai: Star Rail's Second Anniversary will happen on April 26, 2025. Join the Astral Express now and enjoy a long list of rewards!</div>
+            </div>
+          <img src="img/hsr-2.jpg" alt="Slide 2" class="carousel-slide">
+          <img src="img/hsr-3.png" alt="Slide 3" class="carousel-slide"> 
+        </div>
+        <div class="carousel-thumbnails">
+            <img src="img/hsr-1.png" class="thumbnail active" onclick="showSlide(0)">
+            <img src="img/hsr-2-thumb.png" class="thumbnail" onclick="showSlide(1)">
+            <img src="img/hsr-3-thumb.png" class="thumbnail" onclick="showSlide(2)">
+        </div> 
+    </div>  
+    
+    <!--JavaScipt-->
+
+    <script src="index.js"></script>
+</body>
+</html>
