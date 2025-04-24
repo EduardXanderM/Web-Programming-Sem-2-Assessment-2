@@ -50,7 +50,7 @@ ul {
     position: fixed;
     top: 0;
     Z-index: 999;
-    background-color: rgba(0, 0, 0, 0.75); 
+    background-color: rgba(0, 0, 0, 0.6); 
 	backdrop-filter: blur(10px);          
 	-webkit-backdrop-filter: blur(10px);   
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -171,4 +171,25 @@ ul.hide-navbar {
 }
 .carousel-slide {
     position: relative;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: url("img/space.png");
+    background-size: cover;
+}
+.col {
+    flex: 1;
+    padding: 2vh;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: rgba(218, 196, 113, 0.75);          
+    border-radius: 1vh;
+    margin: 1vh;
+    height: 24vh;
+    line-height: 2.2rem;
 }
