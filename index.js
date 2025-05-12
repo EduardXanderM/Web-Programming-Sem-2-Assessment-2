@@ -58,4 +58,22 @@ let lastScrollTop = 0;
         }
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const faders = document.querySelectorAll('.fade-in');
+
+  function checkFade() {
+    faders.forEach(fader => {
+      const rect = fader.getBoundingClientRect();
+      if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+        fader.classList.add('show');
+      } else {
+        fader.classList.remove('show'); // so it fades out if you scroll up
+      }
     });
+  }
+
+  window.addEventListener('scroll', checkFade);
+  checkFade(); // call it once to catch anything already visible
+});
