@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honkai Star Rail Showcase</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!--Navbar-->
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="../index.html" class="home" style="--region-color: #8c6b34;">Home</a></li>
+            <li><a href="herta.html" class="herta" style="--region-color: #5e82d0;">Herta's Spacestation</a></li>
+            <li><a href="../jariloVI/jariloVI.html" class="jariloVI" style="--region-color: #80ddff;">Jarilo-VI</a></li>
+            <li><a href="../xianzhou/xianzhou.html" class="xianzhou" style="--region-color: #00f0aa;">Xianzhou Luofu</a></li>
+            <li><a href="../penacony/penacony.html" class="penacony" style="--region-color: #d4a962;">Penacony</a></li>
+            <li><a href="../amphoreus/amphoreus.html" class="amphoreus" style="--region-color: #a3a3a3;">Amphoreus</a></li>
+            <li style="float: right; margin-right: 2vh;"><a target="_blank" rel="noopener noreferrer" href="https://www.hoyoverse.com/en-us/" class="official" style="--region-color: #276bca;">Support HoyoVerse</a></li>
+        </ul>
+    </nav>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+    <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+    <input type="range" id="seekSlider" min="0" max="100" value="0">
+    <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+        <button id="playPauseBtn">⏯</button>
+        <button id="nextBtn">⏭</button>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+    </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+
+    <!--Footer-->
+
+    <footer style="text-align: center; padding: 2rem; font-size: 0.8rem; color: #888;">
+        <p>This project is a non-commercial, educational assignment created for academic purposes only. All characters, artwork, and music used are the property of their respective owners. No copyright infringement is intended. Music credits have been provided where applicable.</p>
+    </footer>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

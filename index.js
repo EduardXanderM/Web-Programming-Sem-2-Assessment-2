@@ -57,7 +57,7 @@ let lastScrollTop = 0;
             navbar.classList.remove("hide-navbar");
         }
 
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -69,11 +69,28 @@ document.addEventListener("DOMContentLoaded", function () {
       if (rect.top <= window.innerHeight && rect.bottom >= 0) {
         fader.classList.add('show');
       } else {
-        fader.classList.remove('show'); // so it fades out if you scroll up
+        fader.classList.remove('show'); 
       }
     });
   }
 
   window.addEventListener('scroll', checkFade);
-  checkFade(); // call it once to catch anything already visible
+  checkFade(); 
+});
+
+const images = document.querySelectorAll('.character-image-link');
+
+images.forEach(img => {
+  const learnMoreText = document.createElement('span');
+  learnMoreText.textContent = 'Learn More';
+  learnMoreText.classList.add('learn-more');
+  img.parentElement.appendChild(learnMoreText);
+
+  img.addEventListener('mouseenter', () => {
+    learnMoreText.style.opacity = '1';
+  });
+
+  img.addEventListener('mouseleave', () => {
+    learnMoreText.style.opacity = '0';
+  });
 });

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Heng Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/danheng-info.jpeg") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="index.html#danheng" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Dan Heng</h1>
+    <h2>The Imbibitor Lunae</h2>
+    <blockquote>“The past does not define me. I walk my own path.”</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>The Xianzhou Alliance</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Astral Express & Xianzhou Alliance</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Dan Heng is a core member of the Astral Express, serving as the team’s calm and analytical guardian. He's the Express' archivist, often the first to dig into data, lore, or records on the planets they visit. But beneath his composed demeanor lies a deep and mysterious past connected to a powerful legacy.</p>
+        <br>
+        <h3>Character Biography</h3>
+        <p>Dan Heng is a reserved and intelligent member of the Astral Express, serving as its archivist and a steady presence among the crew. Though he often keeps others at arm’s length, his loyalty and sense of duty run deep. Unknown to many, he is the current incarnation of the Imbibitor Lunae, a once-feared Vidyadhara warrior exiled from the Xianzhou Luofu. While he tries to distance himself from this past, the legacy he carries continues to shape his journey, especially as old conflicts resurface in the form of enemies like Blade. Caught between who he was and who he wants to be, Dan Heng travels the stars seeking freedom from fate and the chance to define himself on his own terms.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Dan Heng's personality is defined by his calm, reserved, and introspective nature. He is highly logical and analytical, often preferring facts over emotions when making decisions. Despite his aloof exterior, he deeply values the bonds he forms, particularly with the Astral Express crew, though he may struggle to express it openly. Dan Heng is also burdened by his past — especially his identity as the Imbibitor Lunae — which contributes to his tendency to keep a low profile and avoid unnecessary attention. He’s fiercely self-disciplined, mature beyond his years, and often serves as the voice of reason in tense situations. His quiet demeanor hides a deep well of emotion and strength, which surfaces when those he cares about are in danger.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Dan Heng shares a strong bond with the members of the Astral Express. He trusts the Trailblazer (Caelus or Stelle), often partnering with them on key missions and gradually forming a dependable friendship. With March 7th, he has a close, almost sibling-like relationship; her lighthearted teasing contrasts his stoic nature, helping him open up emotionally. Dan Heng also holds deep respect for Welt Yang, whose wisdom and calm demeanor make him a guiding presence aboard the Express. These relationships form the emotional foundation that supports Dan Heng as he confronts his complicated past and uncertain future.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Past Life as Dan Feng</b></p>
+        <p>Once the Imbibitor Lunae and High Elder of the Vidyadhara on the Xianzhou Luofu, Dan Feng committed a taboo by using forbidden powers during the "Ambrosial Arbor" incident. This led to his downfall and eventual reincarnation.</p>
+        <br>
+        <p><b>Reincarnation as Dan Heng</b></p>
+        <p>Born as a Vidyadhara again, Dan Heng is exiled from the Xianzhou Luofu due to Dan Feng’s legacy. Seeking a new path, he joins the Astral Express to escape his past and find freedom.</p>
+        <br>
+        <p><b>Life on the Astral Express</b></p>
+        <p>Dan Heng becomes the Express's guard and archivist. He builds bonds with March 7th, Welt Yang, and later the Trailblazer (Caelus/Stelle), taking on a key role in the crew's missions.</p>
+        <br>
+        <p><b>The Herta Space Station</b></p>
+        <p>Assists in repelling the Antimatter Legion’s invasion, demonstrating his combat skills and intellect.</p>
+        <br>
+        <p><b>Jarilo-VI - "Embers of a Wildfire"</b></p>
+        <p>Participates in the crew’s investigation of the frozen planet. He supports the Trailblazer through confrontations with the Silvermane Guards and the discovery of Cocolia’s Stellaron plan.</p>
+        <br>
+        <p><b>Xianzhou Luofu - "Vanguard of the Hunt"</b></p>
+        <p>Dan Heng is forced to confront his past when the crew travels to the Luofu. He is temporarily barred from boarding due to his identity. Eventually, his true nature as Imbibitor Lunae is revealed.</p>
+        <br>
+        <p><b>Penacony - "The Planet of Festivities"</b></p>
+        <p>After reconciling some of his past, Dan Heng remains a stable force in the team. While not the central figure, he provides insight and support as the crew navigates the Dreamscape and the secrets of The Family.</p>
+        <br>
+        <p><b>Amphoreus - "Era Neavou"</b></p>
+        <p>Dan Heng’s own themes of identity, reincarnation, and fate mirror the cyclical lore of Amphoreus. His character continues to reflect the tension between predestined roles and chosen paths.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="index.js"></script>
+    <script src="musicPlayer.js"></script>
+</body>
+</html>
