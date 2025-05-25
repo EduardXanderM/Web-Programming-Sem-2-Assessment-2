@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arlan Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/arlan-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="herta.html#arlan" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Arlan</h1>
+    <h2>Head of Security, Herta's Space Station</h2>
+    <blockquote>"Hello, Trailblazer. I'm Arlan, I head up the Security Department on Herta Space Station. I'll be in charge of your safety during your time here."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Unknown</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Asta & Herta's Space Station</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Arlan is the head of security at the Herta Space Station, responsible for protecting its staff and facilities. Though he lacks overwhelming strength or special powers, he is fiercely dedicated and willing to put himself in danger to safeguard others. During the Antimatter Legion’s attack, Arlan plays a key role in the station’s defense, helping to coordinate evacuations and buy time for others. He approaches every crisis with quiet determination, rarely showing emotion but always standing his ground. His actions highlight the courage of ordinary individuals in extraordinary situations.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Arlan is quiet, serious, and deeply responsible. He rarely shows emotion and tends to keep to himself, focusing entirely on his duties as head of security. Despite his young age, he’s incredibly mature and carries a strong sense of duty, often risking his own safety to protect others. He doesn't seek praise or recognition and prefers actions over words. His bond with his dog, Peppy, shows a softer, more caring side beneath his stoic exterior. Arlan’s strength lies in his loyalty, resilience, and willingness to stand firm even without overwhelming power.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Arlan shares a deep bond with his dog, Peppy, who brings out his quiet compassion. He works closely with Asta, earning her trust through his reliability and dedication to station security. Though reserved, he grows to respect the Trailblazer during the events on the Herta Space Station. His relationships are few, but they run deep and are built on loyalty, not words.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Life Before the Space Station</b></p>
+        <p>Very little is known about Arlan’s life before joining the Herta Space Station. His origins remain a mystery, but his strong sense of duty suggests a background shaped by hardship or discipline.</p>
+        <br>
+        <p><b>Joining the Herta Space Station</b></p>
+        <p>Arlan became the head of security at the Herta Space Station, despite not being a researcher or possessing overwhelming power. He quickly earned the trust of Asta and the staff through his unwavering dedication and calm under pressure.</p>
+        <br>
+        <p><b>Antimatter Legion Incident</b></p>
+        <p>During the invasion of the station by the Antimatter Legion, Arlan played a crucial role in defending key areas and ensuring the safety of the staff. Though injured in the conflict, he never hesitated to put himself in danger to protect others.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

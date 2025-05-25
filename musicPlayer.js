@@ -107,4 +107,9 @@ musicToggleBtn.addEventListener("click", () => {
   musicPlayer.style.display = isOpen ? "none" : "block";
 });
 
+bgMusic.addEventListener("ended", () => {
+  currentTrack = (currentTrack + 1) % tracks.length;
+  loadTrack(currentTrack, () => bgMusic.play());
+});
+
 loadPlayerState();

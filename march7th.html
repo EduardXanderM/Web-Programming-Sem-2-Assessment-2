@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>March 7th Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/march7th-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="index.html#march7th" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>March 7th</h1>
+    <h2>The Girl Who Was Frozen in Ice</h2>
+    <blockquote>“You don't need to remember your past to choose your future.”</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Unknown</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Astral Express</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>March 7th serves as the cheerful and optimistic heart of the Astral Express crew in Honkai: Star Rail, providing emotional balance to the often heavy and complex journeys they undertake. Discovered in cryostasis aboard the Herta Space Station with no memories of her past, she was named after the day she was found and quickly became a core member of the Trailblazing team. As the group ventures across different worlds—from Jarilo-VI to Xianzhou Luofu and beyond—March acts as both moral support and a dependable fighter, wielding her ice abilities to protect her friends. Though her origins remain a mystery, March 7th actively seeks to rediscover her past while forging strong bonds with her companions. Her interactions bring levity to the group’s dynamics, and her curiosity often drives the party to explore deeper truths in the universe.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>March 7th has a bright, energetic, and outgoing personality. She’s known for her bubbly enthusiasm, sense of humor, and emotional openness, often lightening the mood during tense moments. Curious and empathetic, she genuinely cares about her friends and often goes out of her way to support them, acting as a bridge between more stoic or serious characters. March is also determined and brave, showing a strong desire to prove herself and uncover her forgotten past. Despite the mystery surrounding her origins, she faces the unknown with optimism and a deep sense of loyalty to the Astral Express crew.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>March 7th shares close, heartfelt relationships with many members of the Astral Express, acting as a sisterly figure and emotional anchor within the crew. Her bond with the Trailblazer (Caelus or Stelle) is one of mutual support and trust, often filled with playful banter and genuine concern. She looks up to Dan Heng, respecting his calm demeanor and often teasing him to get a reaction, while also deeply valuing his insights. With Welt Yang, she shares a mentor-student dynamic, appreciating his wisdom even if she doesn’t always fully understand it. March also grows fond of characters they meet on their journey—like Bronya on Jarilo-VI and Tingyun on the Xianzhou Luofu—forming quick and sincere connections that highlight her compassionate nature. Though she’s haunted by the mystery of her own origin, March’s relationships are rooted in her loyalty, warmth, and unshakable faith in her found family aboard the Astral Express.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Awakening and Joining the Astral Express</b></p>
+        <p>March 7th was found encased in Six-Phased Ice with no memory of her past. After being rescued by the Astral Express crew, she adopted the date of her discovery as her name and set out to learn who she really is while helping the crew on their mission.</p>
+        <br>
+        <p><b>The Herta Space Station</b></p>
+        <p>The Astral Express made a crucial stop at Herta Space Station, where they encountered the militant faction Crimson Impetus and the pervasive threat of Honkai energy. This encounter exposed the crew to the broader galactic conflicts and dangers they must face.</p>
+        <br>
+        <p><b>Jarilo-VI - "Embers of a Wildfire"</b></p>
+        <p>On Jarilo-VI, March 7th helped navigate political turmoil and conflicts among local factions. Their actions helped stabilize the planet and revealed deeper cosmic disturbances linked to the Honkai.</p>
+        <br>
+        <p><b>Xianzhou Luofu - "Vanguard of the Hunt"</b></p>
+        <p>Xianzhou, inspired by Chinese mythology, presented March 7th and the crew with both supernatural and political challenges. They forged alliances and uncovered ancient secrets vital to understanding the galaxy’s larger mysteries.</p>
+        <br>
+        <p><b>Penacony - "The Planet of Festivities"</b></p>
+        <p>At Penacony, a luxury resort world governed by the powerful Family faction, the crew explored the Dreamscape—a collective dream world. They discovered the Charmony Festival and the hidden Land of the Exiles, hinting at the Dreamscape’s true nature and influence.</p>
+        <br>
+        <p><b>March 7th's Illness</b></p>
+        <p>The Astral Express journeyed to Amphoreus to lay new Star Rails and refuel, but March 7th suddenly became seriously ill. While the crew investigated this mysterious world, her condition raised questions about her origin and a deeper connection to the galaxy’s fate.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="index.js"></script>
+    <script src="musicPlayer.js"></script>
+</body>
+</html>

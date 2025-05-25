@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Herta Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/herta-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="herta.html#herta" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>The Herta</h1>
+    <h2>83rd Member of the Genius Society</h2>
+    <blockquote>"The writers from the Intelligentsia Guild wanted to give me an extra title. Something like 'Herta Prime' to separate me from my puppets. How banal. Are the puppets not 'me' as well? So, I gave them a suggestion — if they dared to write that, then I would call myself THE Herta. It's short, simple, straight to the point, and elegant."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Unknown</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Genius Society & Asta</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Herta plays a key supporting role in the early chapters of Honkai: Star Rail, particularly during the crisis at the Herta Space Station. As the founder of the station and the 83rd member of the Genius Society, she operates through a puppet modeled after her younger self, preferring to let her automated forms handle matters while she focuses on higher research. When the Antimatter Legion launches its attack, Herta aids the Trailblazer and their team with her intellect and technological resources. During a critical confrontation in Amphoreus, she attempts to intervene directly but is stopped by a mysterious and powerful figure who matches her capabilities. The situation escalates into a dangerous standoff, where Herta is threatened with mutual destruction and the release of a Lord Ravager, an Emanator of Destruction. Faced with the risk of catastrophic consequences, Herta is forced to retreat.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Herta is highly intelligent, logical, and unapologetically self-centered. As a member of the Genius Society, she sees most things — including people — as experiments, tools, or data points. She’s blunt, often condescending, and prefers using puppet proxies to interact with others so she can focus on more “important” matters. Despite her cold demeanor, Herta has a quirky sense of pride and enjoys proving her superiority, especially when others challenge her intellect. She rarely shows emotion but is deeply curious and ambitious, always pushing boundaries in the name of knowledge.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Herta shares a close working relationship with Asta, who manages the day-to-day operations of the Herta Space Station and acts as her trusted aide. She views the Trailblazer and their team as intriguing variables in her experiments, offering help when it suits her interests. Despite her aloofness, she respects those who challenge her intellect, though she remains guarded and distant. Her interactions are often transactional, focused on advancing her research and protecting the Genius Society’s secrets. Herta maintains a wary stance toward the Antimatter Legion and other cosmic threats that jeopardize her work.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Unknown Origins</b></p>
+        <p>Herta’s exact age and origin remain a mystery. She exists through puppet forms—replicas of her younger self—that allow her to interact with others while her true consciousness focuses on research. She is a highly esteemed member of the Genius Society, dedicated to uncovering cosmic secrets.</p>
+        <br>
+        <p><b>Creation of the Herta Space Station</b></p>
+        <p>Driven by her insatiable curiosity, Herta built the Herta Space Station as a repository for dangerous relics and a hub for scientific study. The station embodies her intellectual ambitions and serves as a floating laboratory for the Genius Society.</p>
+        <br>
+        <p><b>Antimatter Legion Incident</b></p>
+        <p>Although Herta was not directly involved in fighting the Antimatter Legion invasion, her station became a key battleground. Her puppet and trusted aide, Asta, managed much of the defense and communication with the Trailblazer during this crisis.</p>
+        <br>
+        <p><b>Amphoreus - "Flamechase Journey"</b></p>
+        <p>Later, in Amphoreus, Herta tried to assist the Trailblazer but was confronted by a powerful, mysterious adversary capable of matching her intellect. This standoff threatened mutual destruction and the release of a devastating entity, forcing her to withdraw.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

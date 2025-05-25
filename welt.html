@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welt Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/welt-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="index.html#welt" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Welt "Joachim Nokianvirtanen" Yang</h1>
+    <h2>The Reasoned Pathfinder</h2>
+    <blockquote>“Even if the world falls into ruin, I will stand firm and protect what I cherish.”</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>From Another Branch of the Imaginary Tree</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Astral Express</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Welt is a seasoned strategist and powerful ally aboard the Astral Express. Drawing from his origins as a Herrscher of Reason, he provides critical combat expertise and deep insight into cosmic phenomena. As a calm and analytical guide, Welt supports the Trailblazer and crew in navigating Stellaron crises and other interstellar threats, playing a key role in planning and executing their missions across the stars.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Welt is calm, composed, and highly analytical, often approaching situations with a strategic mindset. Despite his serious demeanor, he cares deeply for his comrades and shows a quiet sense of loyalty and responsibility. His experience as a Herrscher lends him a thoughtful and sometimes introspective nature, balancing logic with an underlying compassion for those he protects.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Himeko shares close bonds with the members of the Astral Express crew, particularly with the Trailblazer, whom she mentors and supports throughout their journey. She has a strong and trusting partnership with Welt, another senior member of the Nameless, with whom she collaborates closely to guide the team. Her connections with other crew members are built on mutual respect and care, as she often serves as an emotional anchor and advisor. Though her past remains somewhat mysterious, her deep loyalty and commitment to the Astral Express and its mission unite her with the entire crew as a steadfast figure in their shared adventure.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Origins in Honkai Impact 3rd</b></p>
+        <p>Welt, originally known as Joachim Nokianvirtanen, began as a key figure in Honkai Impact 3rd. After inheriting the Herrscher of Reason’s powers and identity, he led the Anti-Entropy organization with a calm, strategic mind. Throughout his time in HI3rd, Welt sought to balance his immense power with a desire to protect humanity, often wrestling with his own identity and purpose. His journey eventually led to a crossing between dimensions, bringing him into the Honkai: Star Rail universe.</p>
+        <br>
+        <p><b>Arrival and Early Days on the Astral Express</b></p>
+        <p>Upon entering the Honkai: Star Rail universe, Welt joined the Astral Express crew, taking on the role of a strategist and powerful ally. His experience and knowledge quickly made him an indispensable guide as the crew faced their first encounters with Stellaron crises and cosmic threats.</p>
+        <br>
+        <p><b>The Herta Space Station</b></p>
+        <p>Welt contributed his tactical expertise during the complex events at the Herta Space Station. His calm decision-making helped the crew navigate political intrigue and hostile forces, ensuring the team stayed focused on their mission.</p>
+        <br>
+        <p><b>Jarilo-VI - "Embers of a Wildfire"</b></p>
+        <p>While the crew traveled to Jarilo-VI, Welt remained aboard the Astral Express, providing strategic support and guidance from afar. His insights helped the team manage the escalating threats and unravel the mysteries linked to the Stellaron without directly setting foot on the planet.</p>
+        <br>
+        <p><b>Xianzhou Luofu - "Vanguard of the Hunt"</b></p>
+        <p>In Xianzhou, Welt’s deep understanding of cosmic phenomena and history aided the team in unraveling the region’s mysteries. He helped balance the crew’s strategies amid cultural complexities and the unfolding Stellaron crisis.</p>
+        <br>
+        <p><b>Penacony - "The Planet of Festivities"</b></p>
+        <p>During the Penacony arc, Welt continued to support the crew as they navigated the dream-influenced environment and local political tensions. His strategic mind and calm presence helped maintain unity and focus in the face of unpredictable challenges.</p>
+        <br>
+        <p><b>Amphoreus - "Flamechase Journey"</b></p>
+        <p>During the Amphoreus arc, Welt remained aboard the Astral Express alongside Himeko, staying behind to secure assistance from Herta. While the crew confronted threats on Amphoreus, Welt’s efforts to coordinate support and manage resources were crucial in ensuring the team had the backing they needed to face the growing cosmic dangers.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="index.js"></script>
+    <script src="musicPlayer.js"></script>
+</body>
+</html>

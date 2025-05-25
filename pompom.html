@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pom-Pom Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/pompom-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="index.html#pompom" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Pom-Pom</h1>
+    <h2>Conductor of the Astral Express</h2>
+    <blockquote>“Welcome aboard the Astral Express! Ready to ride the stars with me?”</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Creation of Akivili (Aeon of Trailblaze)</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Astral Express</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Pompom serves as the cheerful and endearing conductor of the Astral Express in Honkai: Star Rail. Although he doesn’t participate directly in battles or story conflicts, his role is vital in maintaining the smooth operation of the Astral Express, the train that travels through the stars and connects various worlds. Pompom acts as a symbol of warmth, hope, and unity for the crew and passengers, often offering encouragement and guidance along their journey. His presence helps keep morale high during difficult times and reminds everyone aboard of the importance of camaraderie and adventure. Through his friendly demeanor and dedication, Pompom embodies the heart of the Astral Express, making him an essential part of the story’s emotional core and the crew’s ongoing quest.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Pompom’s personality in Honkai: Star Rail is cheerful, friendly, and optimistic. As the conductor of the Astral Express, he always welcomes new passengers with warmth and keeps the crew’s spirits high. His playful and loyal nature makes him a comforting and beloved presence, bringing lightness and hope to the team during their journey.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Pompom has deep and meaningful relationships with the crew of the Astral Express, serving as a loyal and caring conductor who supports them throughout their journey. Despite his cute and playful appearance, lore reveals that Pompom is actually incredibly old—he has witnessed countless Trailblazers come and go, watching many age and pass away over time. This long history gives him a quiet wisdom and a bittersweet perspective on the passage of time. Among the current crew, he shares a special bond with the Trailblazer, acting as both a guide and a comforting presence. His enduring existence and experiences make him a symbol of continuity and hope amid the ever-changing cosmos, strengthening his connection with those who travel aboard the Astral Express.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Creation and Origin</b></p>
+        <p>Pompom was created by Akivili, an ancient and powerful entity, to serve as the eternal conductor of the Astral Express. Designed to guide and support countless Trailblazers through their cosmic journeys, Pompom was given a long lifespan to fulfill this role across many generations.</p>
+        <br>
+        <p><b>Early Service and Witnessing Trailblazers</b></p>
+        <p>Over countless years, Pompom served as the steadfast conductor, watching many Trailblazers board the Astral Express, live their adventures, and eventually age and pass away. Through this, he gathered quiet wisdom and became a guardian of their memories and legacies.</p>
+        <br>
+        <p><b>Present-Day - Joining the Current Crew</b></p>
+        <p>In the current timeline, Pompom continues his role aboard the Astral Express, guiding the newest crew and the Trailblazer. Though he maintains a cheerful and playful personality, his long experience subtly influences how he supports and comforts the team through their trials.</p>
+        <br>
+        <p><b>The Herta Space Station and Jarilo-VI</b></p>
+        <p>As the Astral Express travels through the Herta Space Station and Jarilo-VI, Pompom ensures the train’s smooth operation and helps the crew navigate political tensions and external threats. His presence provides stability amid growing dangers.</p>
+        <br>
+        <p><b>Xianzhou Luofu, Penacony, and Amphoreus</b></p>
+        <p>During the crew’s ventures into Xianzhou and Penacony, Pompom continues to offer guidance and emotional support. His role as a symbol of hope becomes crucial as the crew uncovers deeper mysteries about the Dreamscape and ancient cosmic forces. At Amphoreus, where the crew faces new cosmic challenges, Pompom’s role as conductor and protector remains vital. His long history and steady presence help ground the team as they confront threats that test their resolve and unity.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="index.js"></script>
+    <script src="musicPlayer.js"></script>
+</body>
+</html>
