@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Wolf Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/silverwolf-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="index.html#silverwolf" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Silver Wolf</h1>
+    <h2>Reality Hacker</h2>
+    <blockquote>"Everything is just a game to me, and I’m good at it."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Punklorde</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Stellaron Hunters</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Silver Wolf is a member of the Stellaron Hunters and one of the first characters introduced in the game. Alongside Kafka, she helps awaken the Trailblazer on the Herta Space Station and initiates the mission to implant the Stellaron. As a brilliant hacker, she plays a crucial role in breaking through digital defenses and systems, paving the way for the Hunters' goals. Though she prefers to stay behind the screen, her actions have real consequences across multiple story arcs.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Silver Wolf is clever, confident, and playful, often treating situations like a game. She has a rebellious streak and enjoys pushing boundaries, especially when it comes to technology and hacking. Despite her laid-back attitude, she’s fiercely loyal to her friends and deeply committed to the Stellaron Hunters' mission. Her sharp wit and quick thinking make her both unpredictable and invaluable.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Silver Wolf shares a close partnership with Kafka, often working together during Stellaron Hunters’ operations. She respects Elio as their leader but tends to keep a bit of distance, preferring her own space. While mostly focused on her missions, Silver Wolf occasionally shows a protective side toward the Trailblazer and other allies, hinting at deeper connections beneath her cool exterior.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>The Herta Space Station</b></p>
+        <p>Silver Wolf is introduced as one of the first Stellaron Hunters, assisting Kafka in awakening the Trailblazer and implanting the Stellaron. She showcases her hacking skills by breaching key systems to support their mission.</p>
+        <br>
+        <p><b>Jarilo-VI - "Embers of a Wildfire"</b></p>
+        <p>Though less directly involved, her presence is felt as the Stellaron Hunters’ plans unfold in the background.</p>
+        <br>
+        <p><b>Xianzhou Luofu - "Vanguard of the Hunt"</b></p>
+        <p>Operating mostly behind the scenes, Silver Wolf uses her expertise to manipulate digital environments and assist the Hunters' objectives, avoiding direct conflict.</p>
+        <br>
+        <p><b>Penacony - "The Planet of Festivities"</b></p>
+        <p>She plays a key role by hacking the hotel’s security systems, allowing Firefly to infiltrate and execute their mission. Her technical support remains vital to the Stellaron Hunters’ continued plans.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="index.js"></script>
+    <script src="musicPlayer.js"></script>
+</body>
+</html>

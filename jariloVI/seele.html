@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seele Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/seele-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="jariloVI.html#seele" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Seele</h1>
+    <h2>Butterfly of Tempest</h2>
+    <blockquote>"To use our strength to create a fair society... Isn't that the obvious goal?"</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Belobog</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Belobog, Underworld & Wildfire</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Seele is a passionate and skilled fighter from the Underworld who supports the resistance group Wildfire in their struggle against Belobog’s oppressive Overworld regime. She becomes a close ally of the Trailblazer, using her strength and determination to protect her friends and fight for justice. Her deep bond with Bronya helps bridge the divide between the Overworld and Underworld, playing a key role in the city’s path toward change. Seele’s courage and loyalty inspire hope throughout the conflict on Jarilo-VI.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Seele is fiery, passionate, and fiercely loyal to those she cares about. She’s brave and headstrong, never hesitating to stand up against injustice. Despite her tough exterior, she has a caring and protective nature, especially toward her close friends. Her determination often fuels her actions, but she also struggles with the weight of her past and the desire for a peaceful future.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Seele shares a deep bond with Bronya, whose calm resolve balances her fiery spirit and helps foster understanding between the Overworld and Underworld. She is fiercely loyal to the members of Wildfire, including Oleg, the group’s leader, and her close friend Clara. Seele also develops a strong trust and friendship with the Trailblazer, viewing them as a vital ally in the fight against oppression. These connections fuel her determination to protect those she cares about and fight for a better future.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Underworld Fighter</b></p>
+        <p>Seele grows up in the harsh conditions of Belobog’s Underworld, developing a strong spirit and fierce determination to protect her community. She becomes an active member of the resistance group Wildfire.</p>
+        <br>
+        <p><b>Meeting the Trailblazer</b></p>
+        <p>Seele first crosses paths with the Trailblazer during their journey through the Underworld. Impressed by their resolve, she begins to trust and support their mission.</p>
+        <br>
+        <p><b>Bridging Worlds</b></p>
+        <p>Her close friendship with Bronya helps build a fragile bridge between the Overworld and Underworld, as both learn from each other’s experiences and challenge their beliefs.</p>
+        <br>
+        <p><b>Fighting for Change</b></p>
+        <p>Seele fights alongside the Trailblazer and Wildfire to confront the oppressive Overworld regime and the corrupting influence of the Stellaron.</p>
+        <br>
+        <p><b>Hope for the Future</b></p>
+        <p>With the fall of Cocolia and the beginning of a new era, Seele looks toward rebuilding Belobog with unity and peace between its divided peoples.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

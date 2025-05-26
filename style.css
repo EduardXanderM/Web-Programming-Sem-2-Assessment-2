@@ -347,4 +347,6 @@ ul.hide-navbar {
 .story-separator img {
     margin-top: 4vh;
     width: 75%;
+    border-radius: 1vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafka Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/kafka-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="index.html#kafka" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Kafka</h1>
+    <h2>The Velvet Bullet</h2>
+    <blockquote>"You won't remember a thing except me."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Unknown</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Stellaron Hunters</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Kafka is one of the first Stellaron Hunters the Trailblazer encounters, playing a key role in the story's beginning. She awakens them on the Herta Space Station and implants the Stellaron, setting the stage for their journey. Acting under Elio’s guidance, Kafka reappears at crucial points, subtly steering events to match the script. Her calm, composed demeanor hides a sharp mind and unwavering purpose, making her one of the most mysterious and influential figures in the Trailblazer’s path.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Kafka is calm, confident, and unfailingly composed—even in the heat of battle. She speaks with precision and grace, often giving the impression that she’s always one step ahead. With a taste for elegance and control, she rarely shows strong emotions, instead relying on her charm and intellect to influence others. Beneath her smooth exterior lies a calculating mind, dedicated to following Elio’s script with quiet efficiency.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Kafka is a devoted follower of Elio, the leader of the Stellaron Hunters, and places deep trust in his visions of the future. She shares a close working relationship with Silver Wolf, often partnering with her on missions despite their contrasting personalities. While her connection to the Trailblazer begins as part of Elio’s plan, it hints at something deeper—an interest that goes beyond duty. Kafka remains distant from most, but those she works with respect her for her precision and composure.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>The Herta Space Station</b></p>
+        <p>Kafka appears at the very start of the story, awakening the Trailblazer and implanting them with a Stellaron. She sets the initial events in motion before disappearing into the shadows.</p>
+        <br>
+        <p><b>Jarilo-VI - "Embers of a Wildfire"</b></p>
+        <p>Though absent physically, her influence is felt as the Trailblazer follows a path shaped in part by her actions and Elio’s script.</p>
+        <br>
+        <p><b>Xianzhou Luofu - "Vanguard of the Hunt"</b></p>
+        <p>Kafka reappears on the Luofu, pursued by the Cloud Knights. Captured by the Alliance, she manipulates her interrogation to help the Trailblazer unlock memories and move forward. She vanishes again once her role is complete, leaving more questions than answers.</p>
+        <br>
+        <p><b>Penacony - "The Planet of Festivities"</b></p>
+        <p>Kafka and the Stellaron Hunters continue to act behind the scenes, subtly influencing events tied to Elio’s vision, though she makes only brief appearances.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="index.js"></script>
+    <script src="musicPlayer.js"></script>
+</body>
+</html>

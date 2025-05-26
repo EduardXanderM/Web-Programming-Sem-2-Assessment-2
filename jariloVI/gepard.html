@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gepard Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/gepard-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="jariloVI.html#gepard" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Gepard</h1>
+    <h2>Stout Defender of Belobog</h2>
+    <blockquote>"Loyalty isn't an inherent virtue of humans. As such, the recipient of that loyalty also needs to be worthy."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Belobog</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Belobog & Silvermane Guards</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Gepard is the captain of the Silvermane Guards, tasked with defending the Overworld city of Belobog and upholding its laws. Loyal to his duty and his people, he initially opposes the Trailblazer and their companions, believing them to be a threat. However, his encounters with them—and the truths they uncover—begin to shake his faith in the status quo. Despite his strict sense of duty, Gepard ultimately chooses to protect Belobog in his own way, showing that true strength lies in compassion as much as discipline.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Gepard is disciplined, principled, and deeply loyal to his duties as a protector of Belobog. He values order, responsibility, and the safety of his people above all else. While he may appear stoic and unyielding, Gepard possesses a kind heart and a strong moral compass. His inner conflict between duty and conscience adds depth to his character, especially as he confronts difficult truths about his homeland.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Gepard is the younger brother of Serval, and though they’ve chosen very different paths—his in the military, hers in rebellion—they remain close at heart. He serves under Cocolia with a strong sense of duty, but begins to question her authority as events unfold. Gepard shares a deep mutual respect with Bronya, seeing her as both a capable leader and someone he wants to protect. His evolving relationship with the Trailblazer also reflects his inner conflict between loyalty and doing what’s right.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Defender of Belobog</b></p>
+        <p>Gepard serves as the steadfast captain of the Silvermane Guards, upholding law and order in the Overworld with unwavering dedication. He believes in protecting Belobog’s people through discipline and loyalty.</p>
+        <br>
+        <p><b>Meeting the Trailblazer</b></p>
+        <p>Initially viewing the Trailblazer as a threat, Gepard confronts them during their investigation into Belobog’s hidden truths. Their bravery and intentions begin to challenge his perspective.</p>
+        <br>
+        <p><b>Cracks in the Ice</b></p>
+        <p>As the truth about the Stellaron and Cocolia’s plans surface, Gepard starts to question the morality of his orders. His internal struggle deepens as he witnesses the growing unrest.</p>
+        <br>
+        <p><b>Quiet Rebellion</b></p>
+        <p>Though still loyal to Belobog, Gepard chooses to act according to his conscience, defying direct orders when necessary to protect the innocent—even if it means turning a blind eye to the Trailblazer’s actions.</p>
+        <br>
+        <p><b>A Guardian Reforged</b></p>
+        <p>After Cocolia’s downfall, Gepard continues to serve under Bronya's new leadership. He remains a stalwart protector of Belobog, now guided by a more balanced vision of justice and compassion.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>
