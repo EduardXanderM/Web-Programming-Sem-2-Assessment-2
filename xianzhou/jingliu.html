@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jingliu Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/jingliu-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="xianzhou.html#jingliu" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Jingliu</h1>
+    <h2>Transendant Flash</h2>
+    <blockquote>"Whoever wishes to learn my swordplay, I will teach them."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>The Xianzhou Alliance</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>The Xianzhou Alliance</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Jingliu plays a complex role in the story as a former sword master of the Xianzhou Luofu and a once-honored member of the High-Cloud Quintet. After succumbing to mara, she was imprisoned for her descent into madness, only to reemerge later as a wandering swordmaster with her own cryptic motives. Her actions serve as both a threat and a revelation, shedding light on the secrets of the past, especially regarding Dan Feng and the High-Cloud Quintet. Jingliu’s confrontations with Dan Heng and Jing Yuan are emotionally charged, connecting personal history with current conflict. Her presence challenges the values of the Luofu and adds depth to the lore of the Xianzhou's struggle with immortality and inner corruption.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Jingliu is calm, enigmatic, and introspective, carrying the weight of her past with quiet dignity. Though once an esteemed and disciplined swordmaster, her fall into mara has made her more stoic and emotionally distant, often expressing herself through cryptic remarks and cold rationality. She values strength and clarity of purpose, though her methods and beliefs now stand at odds with those she once protected. Jingliu shows glimpses of remorse and care, particularly in moments tied to her former disciples and allies, hinting at a deep inner conflict. Ultimately, she is a tragic figure—noble in origin, haunted by the past, and walking a lonely path toward what she believes is atonement.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Jingliu’s most notable relationship is with Dan Feng, her former disciple and a fellow member of the High-Cloud Quintet, whom she deeply influenced and later condemned for his actions surrounding the creation of an abomination. Her connection to Dan Heng, Dan Feng’s reincarnation, is layered with sorrow, frustration, and reluctant guidance—she tests and challenges him, hoping he won’t repeat the mistakes of his past self. Jingliu also shares a long and complicated history with Jing Yuan, another former student and current general of the Luofu, who ultimately had to confront and imprison her when she succumbed to mara. Despite their differences, their shared past binds them with lingering respect and unresolved tension. These relationships reveal the personal cost of immortality and duty within the Xianzhou, reflecting the emotional weight Jingliu carries as a fallen mentor and comrade.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Swordmaster of the Luofu</b></p>
+        <p>Jingliu was once a revered swordmaster of the Xianzhou Luofu and a member of the legendary High-Cloud Quintet. She trained Dan Feng and Jing Yuan, leaving a lasting mark on both through her wisdom and strength. As a warrior, she upheld the ideals of the Luofu, earning respect across the Alliance. However, witnessing the slow erosion of those ideals and the threat of mara began to fracture her spirit. This arc represents her noble past before her tragic fall.</p>
+        <br>
+        <p><b>Descent into Mara</b></p>
+        <p>Over time, Jingliu succumbed to mara, a form of madness that affects long-lived Xianzhou natives. Her descent was gradual but ultimately uncontrollable, forcing her to abandon her post and lash out against what she saw as a corrupt system. In an emotional confrontation, her former student Jing Yuan was forced to seal her away. This event left scars on those who knew her and marked the end of her honorable reputation. It also set the stage for her future reemergence in a darker form.</p>
+        <br>
+        <p><b>Return and Confrontation</b></p>
+        <p>Jingliu eventually reappears, now walking a lonely path as a fallen swordmaster seeking purpose and perhaps redemption. She confronts Dan Heng, testing him physically and philosophically as a way to measure his divergence—or similarity—from Dan Feng. Though she remains emotionally distant, her interactions hint at lingering care and regret. Her role during the Luofu’s recent crises is complex; she operates outside of the Alliance but aids the Trailblazers indirectly. Her journey seems to hover between atonement and resignation, unresolved but deeply compelling.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

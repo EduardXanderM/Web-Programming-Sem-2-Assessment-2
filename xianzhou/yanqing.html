@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanqing Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/yanqing-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="xianzhou.html#yanqing" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Yanqing</h1>
+    <h2>Cloud Knight Lieutenant</h2>
+    <blockquote>"I only called you 'teacher' because I admire your skill in this area. Don't expect me to start taking it easy on you."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>The Xianzhou Alliance</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>The Xianzhou Alliance</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Yanqing is the young lieutenant of the Xianzhou Luofu’s Cloud Knights and serves directly under General Jing Yuan. Though still a teenager, his exceptional swordsmanship and tactical mind have earned him immense trust and responsibility. During the conflict with Phantylia and the Stellaron crisis on the Luofu, Yanqing remains vigilant and loyal, actively defending the ship and supporting the general’s operations. While his inexperience occasionally shows, he demonstrates steady growth as both a warrior and leader. His presence highlights the new generation of the Luofu, carrying forward the legacy of those who came before.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Yanqing is disciplined, loyal, and eager to prove himself worthy of the responsibilities entrusted to him. Despite his youth, he maintains a composed and serious demeanor, especially in matters of duty and honor. He is highly respectful toward his superiors, particularly General Jing Yuan, whom he admires deeply. However, he can sometimes be overly eager or proud, reflecting his inexperience and desire to be seen as dependable. Beneath his calm surface lies a passionate and idealistic young warrior determined to protect the Luofu.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Yanqing's most important relationship is with General Jing Yuan, who acts as both his mentor and guardian. Jing Yuan raised and trained him, instilling in him the values of leadership and strategy. Yanqing respects him deeply, often striving to meet the high standards the general sets, even if he doesn’t always understand his laid-back attitude. He also shares a respectful rapport with Fu Xuan, though their interactions are limited—he values her authority and dedication to the Luofu. Yanqing generally keeps others at a distance, focusing on his duties, but his few bonds are marked by loyalty and sincere admiration.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Early Life and Training</b></p>
+        <p>Yanqing was taken in and trained by Jing Yuan after showing exceptional talent in swordsmanship at a young age. Despite his youth, he quickly rose through the ranks and was appointed lieutenant of the Cloud Knights. He trained rigorously and developed a strict, disciplined personality, determined to protect the Luofu. His loyalty to Jing Yuan shaped his views on leadership and duty. Though young, his skills earned him widespread recognition across the Luofu.</p>
+        <br>
+        <p><b>Stellaron Crisis - Phantylia's Invasion</b></p>
+        <p>During the Stellaron disaster on the Xianzhou Luofu, Yanqing was on high alert, ready to fight in defense of the ship. He grew suspicious of the sudden tensions and attempted to confront internal threats, only to fall into a trap orchestrated by Phantylia. After being manipulated and briefly sidelined, he regrouped under Jing Yuan's orders to help contain the spread of the Disciples of Sanctus Medicus. Despite the setback, he remained resilient and continued to aid the Cloud Knights. The experience humbled him and emphasized the importance of trust and experience.</p>
+        <br>
+        <p><b>Post-Crisis Growth</b></p>
+        <p>Following the resolution of the crisis, Yanqing returned to his duties with renewed resolve. He began to understand the nuances of leadership and the emotional weight Jing Yuan carried. His interactions with other Luofu figures, including Fu Xuan and the Trailblazers, exposed him to broader perspectives. Though still somewhat rigid, he began to show signs of personal growth and maturity. Yanqing remains dedicated to defending the Luofu and supporting Jing Yuan, hoping to one day stand equally beside him as a protector of their people.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fugue / Tingyun Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/fugue-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="xianzhou.html#fugue" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Fugue (Tingyun)</h1>
+    <h2>Traveler of No Return</h2>
+    <blockquote>"Benefactor, though the Cosmos stretches far and wide, and the stars fill the sky, as long as we hold each other in our thoughts, there will always be a chance for reunion."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>The Xianzhou Alliance</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Astral Express & Xianzhou Luofu</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Fugue is the revived form of Tingyun, a former foxian representative of the Whistling Flames merchant guild on the Xianzhou Luofu. After being killed by Phantylia the Undying, an Emanator of the Aeon of Destruction, Tingyun's body was found by Ruan Mei, a member of the Genius Society. Ruan Mei managed to restore her life, but the process left Tingyun with lingering Destruction energy, leading her to adopt the new name Fugue. Now, as Fugue, she navigates her existence with a blend of her past identity and the new path she's forging.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Fugue is gentle and kind-hearted, carrying the warmth and sincerity of her original self, Tingyun. Despite the trauma of her death and resurrection, she remains compassionate and determined to protect those she cares about. Fugue also shows resilience and a quiet strength, facing her altered existence with calm acceptance and a desire to find her own path. Her connection to Destruction energy sometimes causes inner conflict, but she strives to overcome it with grace.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Fugue's most significant relationship is with Ruan Mei, a member of the Genius Society who discovered Fugue's body after her death and played a crucial role in her revival. Ruan Mei's efforts allowed Fugue to regain life, though not without lingering effects from the Destruction energy that had tainted her. This bond is marked by gratitude and a sense of indebtedness, as Fugue navigates her new existence with Ruan Mei's guidance. Additionally, Fugue shares a complex connection with the Trailblazers, particularly the Astral Express crew. While she was once known as Tingyun, a trusted ally and guide aboard the Xianzhou Luofu, her death and subsequent revival as Fugue have altered her relationships. The crew's acceptance of her new identity reflects their understanding and support, though Fugue herself grapples with her past and present selves.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Before the Trailblazer's Arrival</b></p>
+        <p>Tingyun serves as the Head Representative of the Whistling Flames merchant guild on the Xianzhou Luofu, known for her charm and diplomatic skills.</p>
+        <br>
+        <p><b>Phantylia's Attack</b></p>
+        <p>Tingyun embarks on a business errand for the Luofu but is attacked by Phantylia the Undying, an Emanator of the Aeon of Destruction. Phantylia steals Tingyun's identity, leaving her for dead.</p>
+        <br>
+        <p><b>Identity Usurpation</b></p>
+        <p>Phantylia uses Tingyun's appearance and identity to manipulate events aboard the Luofu, furthering her agenda and causing confusion among the crew and allies.</p>
+        <br>
+        <p><b>Discovery and Revival</b></p>
+        <p>Ruan Mei, a member of the Genius Society, learns of Tingyun's fate and locates her body. With the assistance of Luocha, Ruan Mei manages to restore Tingyun to life, though she is left with lingering effects from the Destruction energy.</p>
+        <br>
+        <p><b>Adpotion of the Name "Fugue"</b></p>
+        <p>To distance herself from her past and the trauma associated with it, Tingyun adopts the new name "Fugue" and begins her journey anew.</p>
+        <br>
+        <p><b>Reunion with Trailblazers</b></p>
+        <p>Fugue encounters the Trailblazers during their travels, and they assist her in navigating her new existence and the challenges that come with it.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

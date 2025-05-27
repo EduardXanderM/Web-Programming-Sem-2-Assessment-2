@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fu Xuan Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/fuxuan-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="xianzhou.html#fuxuan" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Fu Xuan</h1>
+    <h2>Master Diviner of the Luofu</h2>
+    <blockquote>"Knowledge exchanged with pain."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>The Xianzhou Alliance</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Xianzhou Luofu & Xianzhou Alliance</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Fu Xuan serves as the Master Diviner of the Xianzhou Luofu, tasked with safeguarding the ship's fate through her mastery of divination and strategic foresight. During the events of the Luofu arc, she plays a vital role in coordinating the defense against internal corruption and the invasion of Phantylia the Undying, who uses the Stellaron to sow chaos. Although often overlooked or challenged by higher authorities like General Jing Yuan, Fu Xuan proves to be an invaluable leader, using her insight and determination to protect the Luofu and support the Trailblazers. Her predictions and choices carry significant weight in shaping the outcome of the crisis, cementing her as a key ally in restoring stability to the ship.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Fu Xuan is confident, intelligent, and highly principled, with a sharp tongue and an unshakable sense of duty. As the Master Diviner of the Xianzhou Luofu, she takes her responsibilities seriously, often placing the wellbeing of the ship and its people above her own comfort. She has a pragmatic view of fate, using her powers of clairvoyance not to control destiny, but to prevent disaster. While she can come off as aloof, overly blunt, or even arrogant, her actions consistently show that she deeply cares about her people and strives to protect them. Beneath her composed exterior lies a resolute spirit and an unwavering belief that she alone must shoulder the burden of foresight.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Fu Xuan holds a deep, if sometimes strained, professional relationship with Jing Yuan, the general of the Xianzhou Luofu. While she often criticizes his laid-back attitude and wishes to take on more leadership herself, she ultimately respects his decisions and supports him when it matters most. She also shares a unique connection with Qingque, her subordinate, frequently expressing exasperation at Qingque’s laziness—but this is underlined by a subtle fondness and a sense of responsibility. Fu Xuan’s cautious but respectful cooperation with the Trailblazer and their allies during the Stellaron crisis marks her growth from a lone seer to someone willing to place trust in others. Despite her pride and independence, her bonds reflect a quiet loyalty and a belief in collective effort when the stakes are high.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Before the Trailblazer's Arrival</b></p>
+        <p>Fu Xuan serves as the Master Diviner of the Xianzhou Luofu, responsible for reading fate and protecting the ship from calamity. Despite her high position and influence, she often feels overlooked in decision-making by other high-ranking figures such as Jing Yuan. Nonetheless, she dutifully uses her powers to safeguard the Luofu’s future.</p>
+        <br>
+        <p><b>Stellaron Crisis - Phantylia's Invasion</b></p>
+        <p>When the Trailblazers arrive on the Luofu during the outbreak of a Stellaron-induced crisis, Fu Xuan quickly becomes a key player. She investigates strange disturbances and corruption spreading through the ship and warns of danger that others initially ignore. As Phantylia the Undying’s plot unfolds, Fu Xuan takes decisive action, aiding the Trailblazers and helping to stabilize the Luofu during and after the chaos.</p>
+        <br>
+        <p><b>Post-Crisis Period</b></p>
+        <p> After the resolution of the Stellaron incident, Fu Xuan gains more recognition for her efforts. Though still as sharp and outspoken as ever, she is now viewed with increased respect, both by her peers and the new allies she supported. Her role as a protector of fate becomes more central as the Luofu prepares for future challenges.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

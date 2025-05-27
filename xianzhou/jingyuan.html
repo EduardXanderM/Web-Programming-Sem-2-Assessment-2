@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jing Yuan Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/jingyuan-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="xianzhou.html#jingyuan" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Jing Yuan</h1>
+    <h2>The Divine Foresight</h2>
+    <blockquote>"A truly masterful chess player has no brilliant moves. People clamor excitedly over displays of extreme cunning, forgetting to worry about the overall dangers of the situation."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>The Xianzhou Alliance</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Astral Express & Xianzhou Luofu</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Jing Yuan is the General of the Cloud Knights aboard the Xianzhou Luofu and one of the seven Arbiter-Generals of the Xianzhou Alliance. Known for his strategic skill and calm demeanor, he leads the Luofu’s military and plays a key role during the Stellaron crisis. Initially wary of the Trailblazers, he later allies with them to confront threats like Phantylia, helping restore Dan Heng’s freedom and supporting their mission by providing aid such as the Jade Abacus.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Jing Yuan is calm, composed, and highly strategic, often maintaining a relaxed and approachable demeanor even in tense situations. He values loyalty and responsibility, showing a strong sense of duty toward protecting Xianzhou Luofu and its people. Despite his serious role, he has a dry wit and a subtle sense of humor, making him respected and trusted by those around him.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Jing Yuan shares a close, respectful relationship with Dan Heng, trusting him deeply and helping secure his freedom. He also maintains strong ties with fellow Cloud Knights Fu Xuan and Yanqing, valuing their loyalty and teamwork. Jing Yuan respects the Trailblazers as vital allies in protecting Xianzhou Luofu and works closely with them to face ongoing threats. Additionally, he balances his leadership duties with supportive and professional relationships with other Arbiter-Generals and key figures, inspiring trust and cooperation across the Luofu.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>The High Cloud Quintet</b></p>
+        <p>In his youth, Jing Yuan was a renowned member of the legendary High-Cloud Quintet, a group of powerful warriors from the Xianzhou Luofu. During this time, he formed strong bonds with figures like Jingliu, his former mentor, and Dan Feng, the previous Imbibitor Lunae. The group fought together against threats to the Luofu, but eventually disbanded after internal conflicts and betrayals. Jing Yuan was deeply affected by Jingliu’s descent into mara-struck madness and Dan Feng’s punishment. These events shaped his calm yet cautious approach to leadership.</p>
+        <br>
+        <p><b>Ascension as the General of Luofu</b></p>
+        <p>Following the dissolution of the High-Cloud Quintet, Jing Yuan rose to the role of Arbiter-General of the Xianzhou Luofu. Known for his strategic brilliance and composed demeanor, he became a respected figure among the people and the Cloud Knights. He took on responsibilities that included overseeing military operations and safeguarding the Luofu from internal and external threats. Despite his laid-back attitude, he always remained alert to danger. His mentorship of Yanqing also began during this period, reflecting his investment in the Luofu’s future.</p>
+        <br>
+        <p><b>Phantylia's Attack</b></p>
+        <p>Jing Yuan becomes involved when the Trailblazers arrive on the Luofu during a crisis involving Blade and the Stellaron. As past secrets resurface, Jing Yuan plays a key role in confronting the chaos linked to Dan Heng’s transformation into Imbibitor Lunae. He demonstrates his ability to navigate both political tension and battle, balancing duty with personal sentiment. His experience proves crucial in helping stabilize the Luofu. He also shows willingness to trust outsiders, supporting the Trailblazers' efforts.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>
