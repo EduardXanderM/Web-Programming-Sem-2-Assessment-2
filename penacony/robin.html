@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/robin-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="penacony.html#robin" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Robin</h1>
+    <h2>The Cosmic Superstar</h2>
+    <blockquote>"There's a saying — the more demanding the diner, the stronger the skills of the chef... but no matter what others say, I'll always be demanding more from myself."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Penacony</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Penacony</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Robin is a renowned Halovian singer born on Penacony, who rose to cosmic fame through her musical talents. Invited back by The Family to perform at the Charmony Festival, she becomes a central figure in the unfolding events. Robin possesses the unique ability to channel the power of Harmony, broadcasting her music to resonate with all forms of life, which plays a pivotal role in the narrative. Her journey intertwines with the Trailblazers as they uncover the deeper mysteries of Penacony's Dreamscape. </p>
+        <br>
+        <h3>Personality</h3>
+        <p>Robin is warm, poised, and compassionate, embodying the ideals of the Harmony Path she follows. Despite her fame, she remains humble and genuinely cares for the well-being of others, often using her voice to uplift and inspire. She carries a quiet strength and unwavering resolve, especially when confronted with the darker truths hidden beneath Penacony’s glamor. Her optimism and dedication to peace contrast sharply with the manipulation surrounding her, making her a beacon of hope in the unfolding conflict.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Robin’s most significant relationship is with Sunday, the leader of The Family and her long-time confidant, who carefully cultivates her public image while hiding Penacony’s darker truths. Though she once trusted him, her worldview begins to shift as she uncovers his manipulation. Her most pivotal bond becomes the one she forms with the Trailblazer—she places immense faith in them, confiding sensitive truths and relying on their judgment when her own path becomes unclear. This deep trust, developed during the Penacony crisis, empowers her to take a stand and reclaim her voice. Robin’s presence also resonates with Sparkle, who views her as both a threat and a figure of admiration in the struggle for control and autonomy.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>The Return to Penacony</b></p>
+        <p>Robin, a renowned Halovian singer born on Penacony, returns home at the invitation of The Family to perform at the Charmony Festival. Her music, imbued with the power of "Harmony," resonates with all forms of life, making her an ideal figurehead for the event. Unbeknownst to her, The Family, led by her brother Sunday, plans to use her performance to manipulate the Dreamscape and further their control over Penacony. Robin remains unaware of the deeper machinations at play, focusing on her role as a performer and symbol of unity. Her return marks the beginning of a journey that will challenge her perceptions and loyalties.</p>
+        <br>
+        <p><b>Unveiling the Truth</b></p>
+        <p>As the Trailblazer investigates the anomalies within the Dreamscape, Robin begins to sense inconsistencies and hidden agendas. Her interactions with the Trailblazer foster a deep trust, leading her to question The Family's intentions. Upon discovering Sunday's plan to use her Harmony-infused performance to brainwash the populace, Robin is devastated by the betrayal. She chooses to stand against her brother, aligning herself with the Trailblazer to thwart The Family's scheme. This decision marks a pivotal shift in her role from a passive symbol to an active participant in Penacony's liberation.</p>
+        <br>
+        <p><b>Reclaiming Harmony</b></p>
+        <p>In the climax of the Penacony arc, Robin collaborates with the Trailblazer and their allies to confront Sunday at the Penacony Grand Theater. Her performance becomes a catalyst for awakening, breaking the Dreamscape's hold over the citizens. Robin's actions contribute significantly to the downfall of The Family's oppressive regime. Following the events, she continues to support the Trailblazer, assisting in uncovering remnants of Sunday's influence. Robin's journey from a manipulated performer to a self-determined agent of change underscores her growth and the restoration of true Harmony in Penacony.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

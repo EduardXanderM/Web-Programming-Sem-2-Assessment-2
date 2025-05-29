@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firefly Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/firefly-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="penacony.html#firefly" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Firefly (Sam)</h1>
+    <h2>Remnant of the Glamoth</h2>
+    <blockquote>"Fyreflies are such magical creatures, aren't they? They may throw themselves at a flame or suddenly grow old, but every night before that, they will shine brighter than the stars."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Glamoth Empire</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Stellaron Hunters</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Firefly, also known as SAM (Strategic Assault Mech), is a member of the Stellaron Hunters and serves as a formidable operative under Elio's guidance. Originally engineered as a weapon to combat the Swarm, she suffers from Entropy Loss Syndrome, a condition that causes a dissociation from her physical form. To manage this, she pilots the SAM mech, which acts as both her combat suit and life support system. In the Penacony arc, Firefly infiltrates the Dreamscape, posing as a local artist and tour guide. Her true identity is concealed until a pivotal moment when she reveals herself as SAM, confronting the Trailblazer in a dramatic twist. Her journey intertwines with the Trailblazer's, leading to a complex relationship marked by shared experiences and mutual understanding.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Firefly is characterized by her gentle and empathetic nature, often displaying kindness and a desire to connect with others. Despite her origins as a weapon, she yearns for a normal life and seeks meaning beyond her predetermined existence. Her condition makes her acutely aware of the fragility of life, fostering a deep appreciation for fleeting moments of happiness. She is also portrayed as playful and affectionate, enjoying simple pleasures like sweet foods and physical affection, which she associates with warmth and human connection.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Firefly's interactions with others are shaped by her dual identity and the complexities of her condition. With the Trailblazer, she shares a bond that evolves from initial deception to genuine companionship. Their relationship is marked by moments of vulnerability and mutual support, culminating in a deep emotional connection. Within the Stellaron Hunters, she maintains a professional rapport, though her personal struggles often lead her to question her role among them. Her interactions with other characters, such as Stelle, further explore themes of identity, belonging, and the quest for freedom.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Origin and SAM Creations</b></p>
+        <p>Firefly was originally a cloned-human, created by the Glamoth Empire to combat the swarm disaster. Firefly is one of many others, equipped with a combat armor (Sam), who last combatted the swarm. After the devastation of her fellow soldiers, Firefly erupts in a pillar of light and shatters the planet. She then falls asleep for an indeterminate amount until Kafka is presumed to rescue her.</p>
+        <br>
+        <p><b>Penacony - "The Planet of Festivities"</b></p>
+        <p>Firefly appears undercover as a cheerful artist and tour guide, concealing her identity while observing the Trailblazer. She ultimately reveals herself as SAM, confronting the Trailblazer but later showing signs of emotional conflict and vulnerability.</p>
+        <br>
+        <p><b>Post-Penacony</b></p>
+        <p>Following the events on Penacony, Firefly’s relationship with the Trailblazer deepens, as she struggles to reconcile her programmed duties with her growing empathy and desire for freedom.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

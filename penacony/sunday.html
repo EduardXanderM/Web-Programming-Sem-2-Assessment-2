@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/sunday-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="penacony.html#sunday" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Sunday</h1>
+    <h2>The Visionary of the Oak Family</h2>
+    <blockquote>"There's always a paradise that needs to be built. That vow is like the sun in the sky — perhaps I'll melt and fall before reaching it... But some hardships I must endure."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Penacony</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Penacony</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Sunday is the charismatic leader of the Oak Family, a prominent faction within Penacony's ruling body known as The Family. Publicly, he presents himself as a benevolent host of the Charmony Festival, aiming to promote harmony and joy. However, beneath this facade, Sunday is a devoted follower of the deceased Aeon of Order, Ena. His true objective is to resurrect Ena by harnessing the power of the Stellaron embedded within Penacony. To achieve this, he plans to use his sister Robin's Harmony-infused music during the festival to brainwash the inhabitants, trapping them in an eternal dreamscape under Ena's order.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Sunday’s personality is a calculated blend of charm and manipulation. Outwardly, he is eloquent, charismatic, and presents himself as a gracious and visionary host who values peace and unity. However, beneath his pleasant demeanor lies a cold, obsessive idealist who is unwavering in his devotion to Ena and the concept of absolute order. He is a skilled actor, maintaining his facade even while orchestrating large-scale deception and control. His belief in his own righteousness allows him to justify extreme actions, making him both compelling and dangerous.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Sunday’s most significant relationship is with Robin, his adoptive sister. He cares for her deeply and sees her as the heart of Penacony’s hope and future. Much of his plan is built around protecting her and using her voice to bring about his vision of harmony, even if it means manipulating her role in the Dreamscape. His connection to Ena, the Aeon of Order, serves more as a guiding philosophy—an abstract ideal through which he tries to "harmonize" the chaotic dreams of Penacony. His bond with the Trailblazer evolves from courteous host to ideological opponent, as they challenge the morality of his methods.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>The Charmony Festival and Hidden Motives</b></p>
+        <p>Sunday, the charismatic leader of the Oak Family, invites the Astral Express crew to Penacony for the Charmony Festival, presenting it as a celebration of unity and joy. He positions his sister, Robin, a renowned singer, as the festival's centerpiece, intending to use her Harmony-infused music to influence the Dreamscape. Beneath the surface, Sunday harbors a deeper agenda: to harness the Stellaron's power within Penacony and align the Dreamscape with the ideals of the Aeon of Order, Ena. His outward hospitality masks a calculated plan to reshape reality according to his vision of harmony.</p>
+        <br>
+        <p><b>Unravelling the Dream and Confrontation</b></p>
+        <p>As the Trailblazer and their allies delve deeper into the Dreamscape, they uncover inconsistencies and manipulations orchestrated by Sunday. The revelation of Robin's intended role in his scheme strains their sibling bond, leading Robin to question and eventually oppose his plans. Sunday's true intentions come to light: he aims to use the Charmony Festival as a conduit to impose Ena's order upon Penacony, effectively controlling its inhabitants' dreams and realities. This sets the stage for a direct confrontation between Sunday and the Trailblazer, challenging his vision of imposed harmony.</p>
+        <br>
+        <p><b>Downfall and Redemption</b></p>
+        <p>Following his defeat, Sunday is confronted with the consequences of his actions and the realization of the harm caused by his pursuit of order. He is offered a chance at redemption and chooses to leave Penacony, seeking to atone for his misdeeds. Sunday boards the Astral Express, embarking on a journey to find a true paradise where harmony doesn't come at the cost of freedom. His departure marks a turning point, not only for himself but also for Penacony, as it begins to heal from the shadows of his ambitions.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

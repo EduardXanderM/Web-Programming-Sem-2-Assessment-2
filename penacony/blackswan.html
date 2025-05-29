@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Swan Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/blackswan-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="penacony.html#blackswan" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Black Swan</h1>
+    <h2>Memokeeper of the Garden of Recollection</h2>
+    <blockquote>"If I can identify and encapsulate a fragment of memory before it's unveiled to the world, those solitary moments of delight are my most favored and unique memories."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Unknown</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Garden of Recollection</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Black Swan is a mysterious memokeeper who safeguards and manages the flow of memories within Penacony. She acts as a guardian of secrets and a key figure in maintaining the balance between reality and the dream world. Throughout the story, she assists the Trailblazers by providing critical insights into the hidden past and the true nature of the threats they face. Her enigmatic presence and deep knowledge make her an essential ally in unraveling Penacony’s mysteries.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Black Swan is calm, enigmatic, and composed, often speaking with quiet authority. She carries an air of mystery that can feel both comforting and unsettling. Though reserved, she shows deep empathy and wisdom, carefully weighing her words and actions. Her dedication to preserving memories gives her a serious, sometimes solemn demeanor, but she also reveals moments of gentle kindness toward those she trusts.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Black Swan shares a complex bond with the Trailblazer, often acting as a guide and keeper of crucial knowledge, fostering a relationship built on trust and mutual respect. She is closely connected to other Memokeepers, working alongside them to preserve memories and histories vital to their world. Her interactions with characters like Acheron reveal a professional camaraderie rooted in shared goals, while her mysterious nature sometimes keeps others at a distance, maintaining an aura of solitude despite her alliances.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Initial Appearance and Rescue</b></p>
+        <p>During the Trailblazer's journey through the Dreamscape, they encounter a perilous situation involving a monstrous entity known as "Death." Black Swan intervenes, rescuing the Trailblazer and Firefly from this threat. She utilizes her abilities to trap the Memory Zone Meme and creates a portal, allowing them to escape safely. This marks her first direct involvement with the Trailblazer's group.</p>
+        <br>
+        <p><b>Guidance through the Memory Zone</b></p>
+        <p>Black Swan reveals her role as a Memokeeper from the Garden of Recollection, expressing her interest in unique and cherished memories. She offers to guide the Trailblazer through the chaotic and enigmatic Memory Zone, providing insights into its nature and the threats it harbors. Her knowledge becomes instrumental in navigating the complexities of the Dreamscape. </p>
+        <br>
+        <p><b>Confrontation and the Dreammaster</b></p>
+        <p>As the Trailblazer and their allies delve deeper into the mysteries of Penacony, they uncover the influence of the Aeon of Order, Ena, and the manipulations of the Dreammaster. Black Swan collaborates with Acheron and other key figures to confront these threats. Her expertise in memory and reality proves crucial in resisting the Dreammaster's control and restoring balance to the Dreamscape.</p>
+        <br>
+        <p><b>Post-Conflict and Continued Involvement</b></p>
+        <p>Following the resolution of the Penacony crisis, Black Swan joins the Astral Express as a guest, indicating a continued interest in the Trailblazer's journey. She suggests traveling to Amphoreus, the Eternal Land, to replenish the Express's fuel, hinting at her ongoing role in future events.</p>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

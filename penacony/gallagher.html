@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallagher Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/gallagher-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="penacony.html#gallagher" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Gallagher</h1>
+    <h2>The Streetwise Bartender</h2>
+    <blockquote>"Making a drink is a sensory skill. In dreams, creating fizzy concoctions requires adding a bit of your mood. Heavier if you're troubled, a touch sweeter if you're in high spirits... It's not just about mixing beverages. It's about mixing the experiences of life."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Penacony</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Penacony</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Gallagher is a bartender and security officer in Penacony who aids the Trailblazers during their investigation of the Dreamscape anomalies. He is revealed to be a memetic entity linked to the History Fictionologists and the Enigmata. Gallagher’s connection to the Watchmaker and the mysterious Dreamflux Reef makes him a key figure in the unfolding events. Despite his laid-back demeanor, his true role is crucial to the story’s deeper mysteries.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Gallagher is easygoing and approachable, often using humor to lighten the mood and ease tensions. He’s loyal and deeply protective of those close to him, especially the residents of Penacony. Though he appears casual and laid-back, he’s sharp, perceptive, and quick to pick up on important details. His strong sense of duty drives him to look out for others, making him a dependable ally in difficult times.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Gallagher is closely tied to Mikhail Char Legwork, the Watchmaker, serving as his confidant and ally. This connection extends to Misha, who is a manifestation of Mikhail's memories; Gallagher's interactions with Misha reflect a protective and guiding dynamic. Additionally, Gallagher collaborates with the Trailblazers, assisting them in uncovering the mysteries of Penacony and challenging the manipulations of the Oak Family. His role as an agent of the Enigmata and his association with the entity "Dormancy" further entwine him with the deeper narrative threads of the Dreamscape.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Introduction and Role in Penacony</b></p>
+        <p>Gallagher is introduced as a slovenly yet courteous bartender and security officer of the Bloodhound Family in Penacony. Despite his laid-back demeanor, he is vigilant and respected among his peers, symbolized by the scar he bears—a rare honor in the dreamlike environment of Penacony. He assists the Trailblazers during their investigation into the anomalies within the Dreamscape. </p>
+        <br>
+        <p><b>Revelations of True Nature</b></p>
+        <p>As the story progresses, it is revealed that Gallagher is not a real person but a memetic entity created by the Enigmata, tasked with fulfilling the Watchmaker's (Mikhail's) final request to free Penacony from the Order's grasp. His existence is tied to the Dreamflux Reef, a memory zone outside the Family's jurisdiction.</p>
+        <br>
+        <p><b>Climax and Sacrifice</b></p>
+        <p>Gallagher plays a pivotal role in aiding the Trailblazers to uncover the truth behind the Dreamscape's manipulation. He confronts Sunday, the main antagonist, and assists in restoring order to Penacony. Following these events, Gallagher disappears, leaving behind a letter expressing gratitude and indicating he has gone to where Mikhail went, suggesting his end as a memetic entity.</p>
+        <br>
+        <p><b>Legacy</b></p>
+        <p>Gallagher's actions and sacrifice are honored by the Astral Express crew. His contributions were crucial in challenging the manipulations of the Oak Family and aiding in the liberation of Penacony from the Stellaron's influence. Despite his disappearance, his legacy endures through the restored peace in Penacony and the memories held by those he aided.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

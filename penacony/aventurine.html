@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventurine Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/aventurine-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="penacony.html#aventurine" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Aventurine</h1>
+    <h2>Gambler of Fate</h2>
+    <blockquote>"Go ahead, use me as you wish, even stab me in the back if you see fit. Exploitation and treachery are simply tools of the trade. But remember, I don't make deals that don't pay off... So, I hope you don't disappoint me."</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Sigonia-IV</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Interstellar Peace Corporation</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Aventurine, a senior manager in the IPC's Strategic Investment Department and one of the Ten Stonehearts, is dispatched to Penacony to reclaim the planet from the Family's control. He orchestrates a complex scheme to expose the truth that death can occur within the Dreamscape, thereby undermining the Family's narrative and justifying IPC intervention. Feigning betrayal and destruction of his own Cornerstone, he manipulates events to provoke a confrontation with Acheron, aiming to be "killed" publicly to reveal the Dreamscape's vulnerabilities. This calculated gamble is emblematic of Aventurine's high-stakes approach to achieving his objectives.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Aventurine is cunning, ambitious, and calculating, with a flair for theatrics and confidence that borders on arrogance. He thrives in high-risk environments and enjoys games of chance, often treating life and business as strategic gambles. Despite his charming and flamboyant exterior, he’s pragmatic and shrewd, always several steps ahead in any negotiation or conflict. His loyalty ultimately lies with the IPC and its goals, and he isn’t above manipulating others to achieve them—so long as the odds are in his favor.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Aventurine maintains a complex set of relationships shaped by ambition, charm, and self-interest. Within the IPC, he appears to get along with Topaz and values professional leverage, though his motivations are often opaque. Initially, his relationship with the Trailblazer is marked by manipulation and gamesmanship during the events of Penacony. However, after the arc’s conclusion and his own brush with mortality, Aventurine’s stance softens—he becomes notably more cordial and even friendly toward the Trailblazer, hinting at a newfound respect born from shared trials. This shift suggests that beneath his glittering confidence lies a character capable of reflection and growth.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Corporate Strategist and Provocateur</b></p>
+        <p>Aventurine, known by his real name Kakavasha, is a senior manager in the IPC's Strategic Investment Department and one of the Ten Stonehearts. He is dispatched to Penacony to oversee the situation involving the Dreamscape and the Family's control over the planet. Initially, he maintains a facade of cooperation with the Family while secretly plotting to expose the truth about the Dreamscape's manipulation and the existence of death within it. His actions are calculated to provoke a response from the IPC and justify their intervention.</p>
+        <br>
+        <p><b>The Gambit and Confrontation</b></p>
+        <p>To further his plan, Aventurine feigns betrayal by destroying his Cornerstone, a significant act that leads to his public "death." This staged event is designed to shock both the Family and the IPC, drawing attention to the anomalies within the Dreamscape. During a critical moment at Clock Studios Theme Park, he threatens to detonate the Stellaron within the Trailblazer, forcing Acheron to "kill" him, which reveals her true identity as an Emanator of Nihility. This confrontation exposes the deeper conspiracies at play and shifts the balance of power.</p>
+        <br>
+        <p><b>Shift in Allegiances and Legacy</b></p>
+        <p>After the events in Penacony, Aventurine's demeanor softens, and he becomes more amicable toward the Trailblazer. He acknowledges the shared goals and mutual respect that have developed, indicating a shift from his initial manipulative tactics to a more cooperative approach. His actions in Penacony, though controversial, play a pivotal role in uncovering the truth and challenging the established order.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>

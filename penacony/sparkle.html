@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkle Info</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../character-info.css">
+    <style>
+        body {
+        font-family: "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif;
+        background: url("img/sparkle-info.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+
+<!--Back Button-->
+
+<a href="penacony.html#sparkle" class="back-arrow">← Back</a>
+
+<!--Character Info-->
+
+<div class="info-panel">
+    <h1>Sparkle</h1>
+    <h2>Crimson Trickster of the Masked Fools</h2>
+    <blockquote>"I'm not exactly a person loaded with cool skills, and dreaming big isn't really my thing. But, ya know, my latest thing is... getting myself into the Genius Society! Ha, I'm so ready to give it a go. Reckon anyone will buy it?"</blockquote>
+    <section>
+        <h3>Origin</h3>
+        <p><i>Unknown</i></p>
+        <br>
+        <h3>Faction / Affiliation</h3>
+        <p>Masked Fools</p>
+        <br>
+        <h3>Role in Story:</h3>
+        <p>Sparkle plays a pivotal yet enigmatic role in the Penacony arc of Honkai: Star Rail. As a member of the Masked Fools, she operates behind the scenes, subtly influencing events to guide the Trailblazer and others toward uncovering the deeper truths of the Dreamscape. Her actions include impersonating key figures, such as Robin, to manipulate situations and provoke critical revelations. Sparkle's interventions often serve to maintain the momentum of the narrative, ensuring that the protagonists remain on the path to confronting the underlying conspiracies within Penacony.</p>
+        <br>
+        <h3>Personality</h3>
+        <p>Sparkle’s personality is a masterful blend of charisma, cunning, and theatrical flair. She thrives on mystery and misdirection, delighting in keeping others—both allies and enemies—guessing about her true intentions. Highly intelligent and manipulative, she excels at playing roles and weaving narratives that serve her hidden goals, often with an air of amusement and detachment. Despite her playful demeanor, she possesses a sharp strategic mind and a deep understanding of people’s emotions and motivations, which she exploits to full effect. Her interactions are laced with wit and ambiguity, making her both fascinating and deeply untrustworthy—an enigma whose true allegiance remains deliberately unclear.</p>
+        <br>
+        <h3>Relationships</h3>
+        <p>Sparkle's relationships are layered and reflect her enigmatic role in the narrative. She shares a complex dynamic with Black Swan, often seeking her attention and approval, while Black Swan regards Sparkle with a mix of curiosity and caution—hinting at mutual intrigue and subtle tension. Her involvement with Firefly is more indirect but impactful; by disguising herself as Sampo, Sparkle plays a role in guiding Firefly’s path during the Penacony incident. She openly mocks Aventurine, criticizing his ties to the IPC and engaging with him in confrontational but sharp-witted exchanges. Sampo, despite being part of the same faction—the Masked Fools—shows clear discomfort around Sparkle, highlighting distrust within their ranks. There's also speculative evidence that Silver Wolf may have enlisted Sparkle’s skills for covert operations, suggesting a working relationship between two equally elusive figures.</p>
+        <br>
+        <h3>Timeline</h3>
+        <br>
+        <p><b>Initiation of Chaos</b></p>
+        <p>Sparkle, a member of the enigmatic Masked Fools, arrives in Penacony under the guise of participating in the Charmony Festival. Her true intent, however, is to sow discord and challenge the prevailing order. She initiates a series of events that lead to Firefly's first death, setting the stage for the unraveling of Penacony's hidden truths. By manipulating circumstances from the shadows, Sparkle ensures that the Trailblazer and their companions begin to question the reality presented to them.</p>
+        <br>
+        <p><b>Manipulation and Revalations</b></p>
+        <p>Throughout the ensuing chaos, Sparkle continues to influence key players subtly. She provides cryptic hints to Aventurine, nudging him toward uncovering the deeper secrets of Penacony. Her actions also plant seeds of doubt in Robin, contributing to her eventual break from Ena's Dream. Sparkle's interventions are calculated to destabilize the existing power structures and reveal the underlying manipulations at play.</p>
+        <br>
+        <p><b>The Grand Finale</b></p>
+        <p>As the Charmony Festival concludes, Sparkle orchestrates a dramatic finale by planting what appears to be bombs on the Radiant Feldspar airship. This act, initially perceived as a threat, culminates in a spectacular fireworks display, symbolizing the end of the festival and the chaos she instigated. Her actions leave a lasting impression on the Trailblazer and their allies, highlighting her role as a catalyst for change and a master of controlled chaos.</p>
+    </section>
+</div>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggleBtn">🎵</button>
+
+    <!--Music Player Interface-->
+    <div id="musicPlayer">
+        <div id="trackTitle" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0">
+        <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <button id="playPauseBtn">⏯</button>
+            <button id="nextBtn">⏭</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" style="width: 80px;">
+        </div>
+    </div>
+
+    <!--Hidden Audio Player-->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <!--JavaScipt-->
+
+    <script src="../index.js"></script>
+    <script src="../musicPlayer.js"></script>
+</body>
+</html>
